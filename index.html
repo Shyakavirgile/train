@@ -2,29 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Random Quiz App</title>
+    <title>Random Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "css/style.css">
 </head>
-<body>
-    <div class="quiz-container">
-        <h1>Random Quiz App</h1>
-        <p id="question"></p>
-        <form id="quiz-form">
-            <input type="radio" name="answer" id="option1">
-            <label for="option1" id="label1"></label><br>
-            <input type="radio" name="answer" id="option2">
-            <label for="option2" id="label2"></label><br>
-            <input type="radio" name="answer" id="option3">
-            <label for="option3" id="label3"></label><br>
-            <input type="radio" name="answer" id="option4">
-            <label for="option4" id="label4"></label><br>
-            <button type="button" id="submit-btn">Submit Answer</button>
-        </form>
-        <p id="result"></p>
-        <p>Correct: <span id="correct-count">0</span></p>
-        <p>Incorrect: <span id="incorrect-count">0</span></p>
+
+
+<body class = "flex">
+    <div class = "wrapper">
+        <div class = "quiz-container">
+            <div class = "quiz-head">
+            <h1 class = "quiz-title">Random Quiz</h1>
+            <div class = "quiz-score flex">
+            <span id = "correct-score"></span>/<span id = "total-question"></span>
+            </div>
+            </div>
+            <div class = "quiz-body">
+            <h2 class = "quiz-question" id = "question"></h2>
+            <ul class = "quiz-options">
+                    
+            </ul>
+            <div id = "result">
+            </div>
+            </div>
+            <div class = "quiz-foot">
+            <button type = "button" id = "check-answer">Submit</button>
+            <button type = "button" id = "play-again">Reset!</button>
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
+
+    <script src = "js/script.js"></script>
 </body>
 </html>
